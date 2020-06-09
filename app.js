@@ -46,13 +46,13 @@
         for(var i=0;i<menu.list.length;i++)
         {
           var item = menu.list[i];
-          if(item.name.includes(menu.search_str))
+          if(menu.search_str.length > 0 && item.description.toLowerCase().includes(menu.search_str.toLowerCase()))
           {
             menu.found_list.push(item);
           }
         }
       }).catch(function (error) {
-        console.log("tada");
+        console.log("Page not found !!");
       });
     }
     menu.remove = function (index) {
