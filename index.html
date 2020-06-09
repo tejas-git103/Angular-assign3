@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app="NarrowItDownApp">
+  <head>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 3</title>
+  </head>
+  <body>
+    <div ng-controller="NarrowItDownController as menu">
+      <h2>Menulist</h2>
+      <div >
+
+        <input type="text" name="" value="" ng-model="menu.search_str">
+
+        <button type="button" ng-click="menu.search()">Narrow It Down For Me!</button>
+      </div>
+      <found-items list="menu" on-remove="menu.remove(index);"></found-items>
+      <!--found-items></found-items-->
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,11 @@
+li{
+  margin: 10px 0px;
+  border-style: console;
+  width : 50%;
+  padding: 5px 5px 5px 5px;
+}
+button{
+  border-radius: 3px;
+  background: white;
+  border-style: solid;
+}
