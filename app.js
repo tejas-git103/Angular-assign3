@@ -23,9 +23,9 @@
         list : '<', // one way binding //'list' is local name which is used in template
         onRemove : '&onRemove' // reference so that when calling it in directive it will still refer to parent(i.e controller)
       },
-      controller : NarrowItDownController,
-      controllerAs : 'menu',
-      bindToController : 'true'
+      // controller : NarrowItDownController,
+      // controllerAs : 'menu',
+      // bindToController : 'true'
     };
     return ddo;
   }
